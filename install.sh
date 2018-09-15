@@ -20,6 +20,7 @@ create_link() {
 }
 
 upgrade_asuna_bootstrap
+create_link
 
 printf '[asuna] add following source string to .bashrc or .zshrc\n\n'
 echo 'export ASUNA_DIR="$HOME/.asuna"'
