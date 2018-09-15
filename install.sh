@@ -15,7 +15,7 @@ upgrade_asuna_bootstrap() {
 
 create_link() {
     if [[ ! -e ${ASUNA_BOOTSTRAP_HOME}/bootstrap.sh ]]; then
-        ln -s ${ASUNA_BOOTSTRAP_HOME}/bootstrap.sh ${ASUNA_BOOTSTRAP_GIT_HOME}/bootstrap.sh
+        ln -s ${ASUNA_BOOTSTRAP_GIT_HOME}/bootstrap.sh ${ASUNA_BOOTSTRAP_HOME}/bootstrap.sh
     fi
 }
 
