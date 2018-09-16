@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e
 
 ASUNA_HOME="$HOME/.asuna"
 ASUNA_BOOTSTRAP_HOME="$ASUNA_HOME/bootstrap"
@@ -11,6 +12,8 @@ upgrade_asuna_bootstrap() {
     else
       git pull
     fi
+
+    cat $ASUNA_BOOTSTRAP_GIT_HOME/banner.txt
 }
 
 create_link() {
